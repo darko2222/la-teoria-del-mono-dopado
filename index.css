@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.5em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,5);
+    box-shadow: 2px 2px 5px rgba(0,0,0,5);
+    color: black;
+    background-color: rgba( 236, 163, 108, 5);
+}
+
+button:hover{
+    background-color: rgb(196, 126, 72);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.6em
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: brown;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(mono_psicodelico.jpg);
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+
+}
+
+#Medicina {
+
+}
+
+#Medicina .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas{
+    background-color: bisque;
+    color: black;
+    text-align: center;
+}
+
+#caracteristicas .container{
+    padding: 150px 12px;
+}
+
+#caracteristicas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#caracteristicas p{
+    display: none;
+}
+
+#caracteristicas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    color: beige;
+
+}
+
+.carta:first-child{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(simio-pensando.jpg);
+}
+
+.carta:nth-child(2){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(hongos_variedad.jpg);
+
+}
+
+.carta:nth-child(3){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(medicina-micologa.jpg);
+    
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 150px 12px;
+
+}
+
+#caracteristicas li{
+    margin: 15px 0px;
+    font-weight: bold;
+}
+
+@media (min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #caracteristicas .info{
+        display: flex;
+        justify-content: center;
+    }
+
+    #caracteristicas p{
+        display: block;
+        margin-bottom: 30px;
+        background-color: black;
+    }
+
+    #caracteristicas h3{
+        margin-top: 0;
+    }
+
+    #caracteristicas .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: black;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    
+
+}
